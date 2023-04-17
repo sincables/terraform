@@ -1,0 +1,11 @@
+ # Proxmox API
+proxmox_api_url = "https://IP-PROXMOX:8006/api2/json" 
+
+# API Token ID (token creado en proxmox)
+proxmox_api_token_id = "MI-TOKEN-ID@pam!identif_token_id"  
+
+# secret facilitado por proxmox al momento de crear el token 
+proxmox_api_token_secret = "XXXXXXXX-XXXXXXXXX-XXXXXXX-XXXXXXX-XXXXXXXXX" 
+
+# ssh-keygen -> ssh-copy-id -i id_rsa.pub user-proxmox@ip-proxmox 
+ssh_key = "ssh-rsa ..........." 
