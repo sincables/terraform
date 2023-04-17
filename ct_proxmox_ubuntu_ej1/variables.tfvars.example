@@ -1,0 +1,12 @@
+ # Proxmox API
+proxmox_api_url = "https://<IP-SERVER-PROXMOX>:8006/api2/json" 
+
+# API Token ID (El nombre asignado equi es un ejemplo)
+proxmox_api_token_id = "root@pam!terraform2"  
+
+# secret facilitado por proxmox al momento de crear el token 
+proxmox_api_token_secret = "xxxxxxx-xxxxxxxx-xxxxxx-xxxxxx" 
+
+# ssh-keygen -> ssh-copy-id -i id_rsa.pub user-proxmox@ip-proxmox 
+#ssh_key = "ssh-rsa ..............." 
+
