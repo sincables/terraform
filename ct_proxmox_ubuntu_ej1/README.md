@@ -1,28 +1,28 @@
-# Ejemplo de despliegue de contenedores Ubuntu con Terraform en Proxmox
+## Ejemplo de despliegue de contenedores Ubuntu con Terraform en Proxmox
 
-# Parametrizaciones configuradas en archivo variables.tfvars.example
+* Parametrizaciones configuradas en archivo variables.tfvars.example
 
 cp variables.tfvars.example variables.tfvars
 
-# Comando inicial terraform
+* Comando inicial terraform
 
 terraform init
 
-# verificacion de estructura
+* verificacion de estructura
 
 terraform plan -var-file=variables.tfvars
 
-# aplicar infraestructura
+* aplicar infraestructura
 
 terraform apply -var-file=variables.tfvars
 
-# Consideraciones Generales de Proxmox
+## Consideraciones Generales de Proxmox
 
-# En caso de no saber la ubicacion de los templates se puede ejecutar en consola de proxmox la sentencia
+* En caso de no saber la ubicacion de los templates se puede ejecutar en consola de proxmox la sentencia
 
 pveam list local
 
-# En caso de no estar el tamplate necesario se debera bajarlo con
+* En caso de no estar el tamplate necesario se debera bajarlo con
 
 pveam download local <template-name>
 
