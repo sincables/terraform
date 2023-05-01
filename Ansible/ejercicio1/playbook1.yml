@@ -1,0 +1,14 @@
+---
+- hosts: alpine
+  remote_user: root
+
+  tasks:
+  - name: "Test ping"
+    ping:
+
+  - name: "mensaje"
+    shell: /usr/bin/echo "inicio de mensaje"
+    register: mensaje
+
+  - name: "Salida Mensaje"
+    debug: msg="{{ mensaje.stdout }}"
